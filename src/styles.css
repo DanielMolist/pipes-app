@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* PRIMENG */
+@import "primeng/resources/themes/lara-dark-indigo/theme.css";
+@import "primeng/resources/primeng.css";
+
+/* ICONS */
+@import "primeicons/primeicons.css";
+
+/* PRIMEFLEX */
+@import 'primeflex/primeflex.scss';

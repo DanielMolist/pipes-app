@@ -1,0 +1,59 @@
+<p-panel header="Pipes Básicos" class="p-1">
+  <p>Pipes incluídos en Angular - Usualmente en el Common Module</p>
+</p-panel>
+
+<div class="grid">
+
+  <div class="col-12 sm:col-4">
+    <p-card header="uppercasse">
+      {{ name | uppercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 sm:col-4">
+    <p-card header="lowercase">
+      {{ name | lowercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 sm:col-4">
+    <p-card header="titlecase">
+      {{ name | titlecase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 sm:col-4">
+    <p-card header="date">
+      <ul>
+        <li><strong>customDate</strong></li>
+        <li>{{ customDate }}</li>
+        <li><strong>customDate | date</strong></li>
+        <li>{{ customDate | date }}</li>
+        <li><strong>customDate | date:'short'</strong></li>
+        <li>{{ customDate | date:'short' }}</li>
+        <li><strong>customDate | date:'long'</strong></li>
+        <li>{{ customDate | date:'long' }}</li>
+        <li><strong>customDate | date:'MMMM'</strong></li>
+        <li>{{ customDate | date:'MMMM' }}</li>
+      </ul>
+    </p-card>
+  </div>
+
+    <div class="col-12 sm:col-4">
+    <p-card header="date | Modificación de GMT e idiomas">
+      <ul>
+        <li><strong>customDate | date:'long':'GMT+0'</strong></li>
+        <li>{{ customDate | date:'long':'GMT+0' }}</li>
+        <li><strong>customDate | date:'long':'GMT-5'</strong></li>
+        <li>{{ customDate | date:'long':'GMT-5' }}</li>
+        <li><strong>customDate | date:'long':'GMT+8'</strong></li>
+        <li>{{ customDate | date:'long':'GMT+8' }}</li>
+        <li><strong>customDate | date:'long':'':'en-US'</strong></li>
+        <li>{{ customDate | date:'long':'':'en-US' }}</li>
+        <li><strong>customDate | date:'long':'':'fr'</strong></li>
+        <li>{{ customDate | date:'long':'':'fr' }}</li>
+      </ul>
+    </p-card>
+  </div>
+
+</div>
